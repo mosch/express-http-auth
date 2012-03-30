@@ -1,5 +1,7 @@
 # Express Http Basic Auth
-      
+
+## Global authorization
+
   Enables http basic authorization for the express framework.
    
     var http_auth = require('express-http-auth');
@@ -18,6 +20,8 @@
     $ npm install express-http-auth
 
 ## Quick Start
+
+### Per route authorization
 
   You also can use the module as middleware. It's up to you to check the information.
   
