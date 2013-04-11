@@ -1,19 +1,4 @@
 # Express Http Basic Auth
-
-## Global authorization
-
-  Enables http basic authorization for the express framework.
-   
-    var http_auth = require('express-http-auth');
-  
-    // Configuration
-    app.configure(function() {
-      // Require http auth
-      app.use(http_auth.realm('Private Area'));
-      …
-    }
-    
-  Express will now ask for authorization on every request. The authorization informations will be available in the request object.
   
 ## Installation
 
@@ -58,3 +43,19 @@
       // your normal code
       …
     });
+    
+    
+## Global authorization
+
+  Enables http basic authorization for the express framework.
+   
+    var http_auth = require('express-http-auth');
+  
+    // Configuration
+    app.configure(function() {
+      // Require http auth
+      app.use(http_auth.realm('Private Area'));
+      …
+    }
+    
+  Express will now ask for authorization on every request. The authorization informations will be available in the request object.
