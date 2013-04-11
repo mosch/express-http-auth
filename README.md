@@ -8,7 +8,7 @@
 
 ### Per route authorization
 
-  You also can use the module as middleware. It's up to you to check the information.
+  To obtain a "per route authorization", you can use the module as middleware. It's up to you to check the information.
   
     var private = require('express-http-auth').realm('Private Area');
   
