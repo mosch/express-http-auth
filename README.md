@@ -16,7 +16,7 @@
       if (req.username == 'Foo' && req.password == 'Bar') {
         
       } else {
-        req.send(103);
+        res.send(103);
       }
     });
     
@@ -28,7 +28,7 @@
       if (req.username == 'Foo' && req.password == 'Bar') {
         next();
       } else {
-        req.send(403);
+        res.send(403);
       }   
     }
     
