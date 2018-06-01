@@ -16,7 +16,7 @@
       if (req.username == 'Foo' && req.password == 'Bar') {
         
       } else {
-        res.send(103);
+        res.send(403);
       }
     });
     
@@ -36,7 +36,7 @@
   
     app.get('/private_area', private, function(req, res) {
       // your normal code
-      res.send('Hello '.req.username);
+      res.send('Hello '+req.username);
     });
   
     app.get('/protected_area', private, function(req, res) {
